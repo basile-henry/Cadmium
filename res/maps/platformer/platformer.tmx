@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="23" height="5" tilewidth="70" tileheight="70" backgroundcolor="#d0f4f7">
+ <tileset firstgid="1" name="tiles_spritesheet" tilewidth="70" tileheight="70" spacing="2">
+  <image source="../../images/platformer/tiles_spritesheet.png" width="914" height="936"/>
+ </tileset>
+ <layer name="background" width="23" height="5">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFpADNgXYAHgAAGsgAKg==
+  </data>
+ </layer>
+ <layer name="solid" width="23" height="5">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAMXIHYEoh1iVBLTwBzFzaMz62KQJwBxbEUuqEVzVxRIJ4JxdhAI5LdpGBkc2dikc8EYgC24g9h
+  </data>
+ </layer>
+ <layer name="foreground" width="23" height="5">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFxALNgXYAAQAAG2wAKg==
+  </data>
+ </layer>
+</map>
