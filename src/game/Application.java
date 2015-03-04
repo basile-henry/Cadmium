@@ -6,9 +6,9 @@ import states.*;
 
 import java.io.File;
 
-public class Engine extends StateBasedGame {
+public class Application extends StateBasedGame {
 
-    public Engine() {
+    public Application() {
         super("Cadmium");
     }
 
@@ -19,7 +19,7 @@ public class Engine extends StateBasedGame {
         System.setProperty("org.lwjgl.librarypath", new File("libs/natives").getAbsolutePath());
 
         try {
-            AppGameContainer game = new AppGameContainer(new Engine());
+            AppGameContainer game = new AppGameContainer(new Application());
             game.setDisplayMode(Window.WIDTH, Window.HEIGHT, false);
             game.start();
         } catch (SlickException e) {

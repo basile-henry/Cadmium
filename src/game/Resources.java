@@ -4,6 +4,7 @@ import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.Sound;
 import org.newdawn.slick.SpriteSheet;
+import world.Tile;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -21,17 +22,17 @@ public class Resources {
         sounds = new HashMap<String, Sound>();
 
         try {
-            sprites.put("tiles_spritesheet", loadSprite("res/images/platformer/tiles_spritesheet.png", 70,70, 2));
+            sprites.put("tiles_spritesheet", loadSprite("res/images/platformer/tiles_spritesheet.png", Tile.BIG_SIZE, Tile.BIG_SIZE, 2));
         } catch (SlickException e) {
             e.printStackTrace();
         }
     }
 
-    private Image loadImage(String path) throws SlickException {
+    public static Image loadImage(String path) throws SlickException {
         return new Image(path, false, Image.FILTER_NEAREST);
     }
 
-    private SpriteSheet loadSprite(String path, int tileWidth, int tileHeight, int spacing) throws SlickException {
+    public static SpriteSheet loadSprite(String path, int tileWidth, int tileHeight, int spacing) throws SlickException {
         return new SpriteSheet(loadImage(path), tileWidth, tileHeight, spacing);
     }
 
